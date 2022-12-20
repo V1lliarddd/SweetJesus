@@ -1,0 +1,36 @@
+.places-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+.st {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+}
+.st .adress {
+  color: #5bb4b9;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+.st::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 2px;
+  bottom: -1rem;
+  background-color: #5bb4b9;
+}
+.adress a {
+  text-decoration: none;
+  color: #5bb4b9;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+.adress a:hover {
+  color: pink;
+}

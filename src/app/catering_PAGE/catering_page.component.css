@@ -1,0 +1,23 @@
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 1100px;
+}
+.container h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 32px;
+  text-align: center;
+}
+.container p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  text-transform: capitalize;
+  font-size: 20px;
+  text-align: center;
+}
