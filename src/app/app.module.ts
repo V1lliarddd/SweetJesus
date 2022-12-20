@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LocationPlacesComponent } from './location-places/location-places.component';
 import { LocationComponent } from './location_PAGE/location.component';
 import { CateringComponent } from './catering_PAGE/catering_page.component';
+import { CateringFormComponent } from './catering-form/catering-form.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -27,6 +28,7 @@ import { CateringComponent } from './catering_PAGE/catering_page.component';
     LocationPlacesComponent,
     LocationComponent,
     CateringComponent,
+    CateringFormComponent,
   ],
   bootstrap: [AppComponent],
 })
