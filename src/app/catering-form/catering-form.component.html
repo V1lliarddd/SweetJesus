@@ -2,7 +2,22 @@
   <div class="name">
     <div class="firstName">
       <label for="firstName">First Name</label>
-      <input type="text" formControlName="firstName" id="firstName" />
+      <input
+        type="text"
+        formControlName="firstName"
+        id="firstName"
+        name="firstName"
+      />
+      <p
+        class="error"
+        *ngIf="
+          catering.controls.firstName.errors?.required &&
+          catering.controls.firstName.touched &&
+          !catering.controls.firstName.active
+        "
+      >
+        Entry Your First Name
+      </p>
     </div>
     <div class="lastName">
       <label for="lastName">Last Name</label>
@@ -21,4 +36,5 @@
     <label for="notes">Your Notes:</label>
     <textarea id="notes" cols="30" rows="10" formControlName="notes"></textarea>
   </div>
+  <button type="submit" class="submit">Submit</button>
 </form>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-catering-form',
@@ -8,12 +8,17 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class CateringFormComponent implements OnInit {
   catering = new FormGroup({
-    firstName: new FormControl<string>(''),
-    lastName: new FormControl<string>(''),
-    emailAddress: new FormControl<string>(''),
-    phone: new FormControl<string>(''),
-    notes: new FormControl<string>(''),
+    firstName: new FormControl<string>('', [Validators.required]),
+    lastName: new FormControl<string>('', [Validators.required]),
+    emailAddress: new FormControl<string>('', [Validators.required]),
+    phone: new FormControl<string>('', [Validators.required]),
+    notes: new FormControl<string>('', [Validators.required]),
   });
+
+  get() {
+    return this.catering.controls.firstName, this.catering.controls.lastName;
+  }
+
   submit() {
     console.log('1');
   }

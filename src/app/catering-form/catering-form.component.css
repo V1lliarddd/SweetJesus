@@ -14,8 +14,6 @@
 .firstName {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .firstName label {
   align-self: start;
@@ -74,4 +72,33 @@
   font-size: 26px;
   width: 90%;
   border: 1px solid gray;
+}
+.notes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.notes textarea {
+  width: 90%;
+  font-size: 18px;
+}
+.notes label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.submit {
+  position: relative;
+  left: 4.6%;
+  width: 20%;
+  height: 35px;
+  background-color: #64c6cb;
+  border: none;
+  font-size: 18px;
+  color: white;
+}
+.error {
+  color: red;
+  margin-top: 0%;
+  align-self: flex-start;
 }
