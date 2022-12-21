@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ICatering } from '../cateringInterface';
 
 @Component({
   selector: 'app-catering-form',
@@ -16,11 +17,25 @@ export class CateringFormComponent implements OnInit {
   });
 
   get() {
-    return this.catering.controls.firstName, this.catering.controls.lastName;
+    return (
+      this.catering.controls.firstName,
+      this.catering.controls.lastName,
+      this.catering.controls.emailAddress,
+      this.catering.controls.phone,
+      this.catering.controls.notes
+    );
   }
-
+  reviews: ICatering[] = [];
   submit() {
-    console.log('1');
+    this.reviews.push({
+      firstName: this.catering.controls.firstName.value,
+      lastName: this.catering.controls.lastName.value,
+      email: this.catering.controls.emailAddress.value,
+      phone: this.catering.controls.phone.value,
+      notes: this.catering.controls.notes.value,
+    });
+    console.log(this.reviews);
+    this.catering.reset()
   }
   constructor() {}
   ngOnInit() {}

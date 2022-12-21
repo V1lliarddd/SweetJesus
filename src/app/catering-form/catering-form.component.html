@@ -12,8 +12,7 @@
         class="error"
         *ngIf="
           catering.controls.firstName.errors?.required &&
-          catering.controls.firstName.touched &&
-          !catering.controls.firstName.active
+          catering.controls.firstName.touched
         "
       >
         Entry Your First Name
@@ -22,19 +21,55 @@
     <div class="lastName">
       <label for="lastName">Last Name</label>
       <input type="text" formControlName="lastName" id="lastName" />
+      <p
+        class="error"
+        *ngIf="
+          catering.controls.lastName.errors?.required &&
+          catering.controls.lastName.touched
+        "
+      >
+        Entry Your Last Name
+      </p>
     </div>
   </div>
   <div class="email">
     <label for="email">E-mail Address</label>
     <input type="text" id="email" formControlName="emailAddress" />
+    <p
+      class="error"
+      *ngIf="
+        catering.controls.emailAddress.errors?.required &&
+        catering.controls.emailAddress.touched
+      "
+    >
+      Entry Your Email Address
+    </p>
   </div>
   <div class="phone">
     <label for="phone">Phone Number</label>
     <input type="text" id="phone" formControlName="phone" />
+    <p
+      class="error"
+      *ngIf="
+        catering.controls.phone.errors?.required &&
+        catering.controls.phone.touched
+      "
+    >
+      Entry Your Phone Number
+    </p>
   </div>
   <div class="notes">
     <label for="notes">Your Notes:</label>
     <textarea id="notes" cols="30" rows="10" formControlName="notes"></textarea>
+    <p
+      class="error"
+      *ngIf="
+        catering.controls.notes.errors?.required &&
+        catering.controls.notes.touched
+      "
+    >
+      Entry Note
+    </p>
   </div>
   <button type="submit" class="submit">Submit</button>
 </form>
