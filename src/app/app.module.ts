@@ -16,6 +16,7 @@ import { CateringComponent } from './catering_PAGE/catering_page.component';
 import { CateringFormComponent } from './catering-form/catering-form.component';
 import { SocialPageComponent } from './social_PAGE/social_page.component';
 import { SocialSliderComponent } from './social-slider/social-slider.component';
+import { FranchisingComponent } from './franchising_PAGE/franchising_page.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule, ReactiveFormsModule],
@@ -33,6 +34,7 @@ import { SocialSliderComponent } from './social-slider/social-slider.component';
     CateringFormComponent,
     SocialPageComponent,
     SocialSliderComponent,
+    FranchisingComponent,
   ],
   bootstrap: [AppComponent],
 })

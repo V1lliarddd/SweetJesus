@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./social_page.component.css'],
 })
 export class SocialPageComponent {
-  images = [
+  images1 = [
     {
       imageSrc:
         'https://images.squarespace-cdn.com/content/v1/57239a2801dbaedc4e8a8405/1517424984614-W5STCOCYX4SUCOFY5EIS/SJ+Gallery_1.jpg?format=2500w',

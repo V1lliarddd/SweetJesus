@@ -26,7 +26,7 @@ export class SocialSliderComponent implements OnInit {
       this.autoSlideImages();
     }
   }
-  nextImage(): void {
+  nextImage() {
     if (this.selectedIndex === this.images.length - 1) {
       this.selectedIndex = 0;
     } else {
