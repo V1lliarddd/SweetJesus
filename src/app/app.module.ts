@@ -14,6 +14,8 @@ import { LocationPlacesComponent } from './location-places/location-places.compo
 import { LocationComponent } from './location_PAGE/location.component';
 import { CateringComponent } from './catering_PAGE/catering_page.component';
 import { CateringFormComponent } from './catering-form/catering-form.component';
+import { SocialPageComponent } from './social_PAGE/social_page.component';
+import { SocialSliderComponent } from './social-slider/social-slider.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule, ReactiveFormsModule],
@@ -29,6 +31,8 @@ import { CateringFormComponent } from './catering-form/catering-form.component';
     LocationComponent,
     CateringComponent,
     CateringFormComponent,
+    SocialPageComponent,
+    SocialSliderComponent,
   ],
   bootstrap: [AppComponent],
 })

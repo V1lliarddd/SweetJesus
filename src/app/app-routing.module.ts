@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { CateringComponent } from './catering_PAGE/catering_page.component';
 import { LocationComponent } from './location_PAGE/location.component';
 import { MainPageComponent } from './main_PAGE/main_page.component';
+import { SocialPageComponent } from './social_PAGE/social_page.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,7 @@ const routes: Routes = [
     redirectTo: '/Menu',
     pathMatch: 'full',
   },
+  { path: 'Social', component: SocialPageComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
