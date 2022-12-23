@@ -33,4 +33,16 @@
 .nav-bar ul li a:hover {
   text-decoration: underline;
 }
-
+#select-menu {
+  border: none;
+  background-color: #64c6cb;
+  color: white;
+  outline: none;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+#select-menu option {
+  background-color: #64c6cb;
+  border: none;
+  padding: 5px;
+}

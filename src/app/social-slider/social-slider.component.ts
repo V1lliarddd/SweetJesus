@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-interface carouselImage {
+export interface carouselImage {
   imageSrc: string;
   imageAlt: string;
 }
